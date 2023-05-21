@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Very-Light-Gray);
+}
+
+.header-title {
+  color: var(--Grayish-Blue);
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+.header-sub-title {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.header-paragraph {
+  padding-top: 20px;
+  color: var(--Grayish-Blue);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  width: 30%;
+}
+
+.main {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  height: 525px;
+  background-color: var(--Very-Light-Gray);
+}
+
+.main-card {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: 210px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-weight: 200;
+  font-size: 14px;
+  color: var(--Very-Dark-Blue);
+  transition: 0.8s;
+}
+
+.main-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.main-card-middle {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-title {
+  padding: 20px 0px 0px 20px;
+}
+
+.card-paragraph {
+  padding: 10px 20px 0px 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.card-img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+
+#cyan {
+  border-top: 3.5px solid var(--Cyan);
+}
+
+#red {
+  border-top: 3.5px solid var(--Red);
+}
+
+#orange {
+  border-top: 3.5px solid var(--Orange);
+}
+
+#blue {
+  border-top: 3.5px solid var(--Blue);
+}
+
+@media only screen and (max-width: 768px) {
+  .header-paragraph {
+    width: 80%;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+
+  .header-sub-title {
+    font-size: 24px;
+  }
+
+  .header-paragraph {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .main {
+    flex-direction: column;
+    height: 680px;
+    gap: 15px;
+  }
+
+  .main-card {
+    max-width: 280px;
+    width: 100%;
+    height: 150px;
+  }
+
+  .main-card-middle {
+    max-width: 280px;
+    width: 100%;
+  }
+}
